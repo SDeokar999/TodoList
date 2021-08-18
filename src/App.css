@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #2b5a33;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -20,8 +22,36 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: xx-large;
   color: white;
+}
+.fc {
+  font-family: Roboto Condensed, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2b5a33;
+  background-size: 100px;
+  padding: 2em 3em 4em;
+}
+
+.fc-r1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.fc-r2 {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1em;
+  letter-spacing: 0.64em;
+  color: #1d6152;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: -0.7em;
+  padding: 0.65em 0 0.65em 0.7em;
 }
 
 .App-link {
