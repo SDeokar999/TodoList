@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import {Box, Button, Container, Grid, makeStyles, TextField, Typography} from "@material-ui/core";
-import AddBoxIcon from '@material-ui/icons/AddBox';
-import DeleteIcon from '@material-ui/icons/Delete';
-import * as PropTypes from "prop-types";
+import {Container, Grid, makeStyles} from "@material-ui/core";
+
 import {useState} from "react";
 import Form from "./Form";
 import DisplayText from "./DisplayText";
