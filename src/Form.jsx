@@ -51,8 +51,9 @@ const Form=({typeText,setTypeText,todos,setTodos})=>{
                 value={typeText}
                 fullWidth="true"
                 id="filled-secondary"
+                label="Add item"
                 disableUnderline={false}
-                style={{border: '0', height: "40px", marginBottom: '5px', paddingLeft: '10px',textTransform:"capitalize"}}
+                style={{border: '0', height: "40px", margin: '5px', padding: '10px',textTransform:"capitalize"}}
                 InputProps={{ disableUnderline: true, className: classes.input,style: { textTransform: "capitalize" }}}
                 onChange={(e)=>setTypeText(e.target.value)}
             />
