@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     DisplayContainer:{
 
         justifyContent: "center",
-        alignItems: "center", width: "200px"
+        alignItems: "center", width: "300px"
     },
     DisplayItemBox:{
         width: "200px", display: "flex",
@@ -41,10 +41,6 @@ const useStyles = makeStyles({
     }
 })
 
-
-
-
-
 function App() {
     const classes = useStyles();
     const [typeText,setTypeText]=useState("")
@@ -54,13 +50,17 @@ function App() {
         <div className="App">
             <div className="fc">
                 <h1 className="fc-r1">Todo List</h1>
-                <h1 className="fc-r2">Make Thinks Easy</h1>
+                <h1 className="fc-r2">Make Things Easy</h1>
             </div>
             <Container maxWidth={"md"}>
                 <Grid container xs={12} style={{display: "flex"}}>
                     <Grid item xs={3}></Grid>
                     <Grid item xs={6} style={{height: "70px"}}>
-                        <Form setTodos={setTodos} todos={todos} typeText={typeText} setTypeText={setTypeText}/>
+                        <Container maxWidth={"md"} style={{display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center"}}>
+                            <Form setTodos={setTodos} todos={todos} typeText={typeText} setTypeText={setTypeText}/>
+                        </Container>
                         <Container maxWidth={"md"} className={classes.DisplayContainer}>
                             {todos.map((todo)=>(
                                 <DisplayText todo={todo} todos={todos} setTodos={setTodos} typeText={todo.text}/>
