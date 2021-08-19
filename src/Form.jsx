@@ -1,7 +1,5 @@
 import {Box, makeStyles, TextField} from "@material-ui/core";
 import AddBoxIcon from "@material-ui/icons/AddBox";
-import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
-import {useState} from "react";
 
 const useStyles = makeStyles({
     headers: {

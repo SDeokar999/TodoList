@@ -1,6 +1,5 @@
 import {Grid, makeStyles, Typography} from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
-import DoneIcon from '@material-ui/icons/Done';
 import {useState} from "react";
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
